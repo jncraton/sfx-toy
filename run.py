@@ -24,12 +24,13 @@ pygame.init()
 pygame.mixer.init()
 
 sounds = {
-  'a': 'airplane',
+  'a': 'ambulance',
   'b': 'bell',
   'c': 'cow',
   'd': 'dog',
   'f': 'fire',
   'h': 'horn',
+  'j': 'jet',
   'p': 'police',
   'r': 'rain',
   't': 'train',

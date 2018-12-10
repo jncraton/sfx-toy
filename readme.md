@@ -14,3 +14,4 @@ Sounds are from:
 - http://soundbible.com/2219-Airplane-Landing-Airport.html
 - http://soundbible.com/1247-Wind.html
 - http://soundbible.com/2178-Crackling-Fireplace.html
+- http://soundbible.com/1233-Siren.html
