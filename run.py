@@ -40,6 +40,7 @@ sounds = {
 while True:
   char = getch.getch()
 
+  pygame.mixer.music.stop()
   os.system('clear')
 
   try:
