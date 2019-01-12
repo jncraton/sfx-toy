@@ -5,6 +5,7 @@ import random
 from pyfiglet import Figlet
 import getch
 import pygame
+import time
 
 RED   = "\033[1;31m"  
 BLUE  = "\033[1;34m"
@@ -46,7 +47,10 @@ while True:
   try:
     print(f.renderText(sounds[char]))
 
+    pygame.mixer.music.stop()
     pygame.mixer.music.load('sounds/' + sounds[char] + '.mp3')
     pygame.mixer.music.play()
+
+    time.sleep(3)
   except KeyError:
     pass
