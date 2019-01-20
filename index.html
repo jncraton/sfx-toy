@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>SFX Toy</title>
+    <style>
+    body {
+      font-family: sans-serif;
+    }
+    h1 {
+      font-size: 144px;
+    }
+    </style>
+</head>
+
+<body>
+
+<h1></h1>
+
+<script>
+let sounds = {
+  'a': 'ambulance',
+  'b': 'bell',
+  'c': 'cow',
+  'd': 'dog',
+  'f': 'fire',
+  'h': 'horn',
+  'j': 'jet',
+  'p': 'police',
+  'r': 'rain',
+  't': 'train',
+  'w': 'whistle',
+}
+
+let audio = new Audio()
+
+document.addEventListener('keyup',function(e) {
+  let name = sounds[e.key]
+
+  if (name) {
+    document.querySelector('h1').innerHTML = name.toUpperCase()
+  
+    audio.src = 'sounds/' + sounds[e.key] + '.mp3'
+    audio.play()
+  }
+})
+</script>
+
+</body>
+
+</html>
