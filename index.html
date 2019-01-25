@@ -32,12 +32,19 @@ let sounds = {
   'w': 'whistle',
 }
 
+let colors = ['red','blue','green','purple','black','pink','orange','green']
+
 let audio = new Audio()
 
 document.addEventListener('keyup',function(e) {
   let name = sounds[e.key]
 
   if (name) {
+    let color = colors[Math.floor(Math.random()*colors.length)]
+    
+    
+    document.querySelector('h1').style.color = color
+  
     document.querySelector('h1').innerHTML = name.toUpperCase()
   
     audio.src = 'sounds/' + sounds[e.key] + '.mp3'
