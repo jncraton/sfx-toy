@@ -15,3 +15,5 @@ Sounds are from:
 - http://soundbible.com/1247-Wind.html
 - http://soundbible.com/2178-Crackling-Fireplace.html
 - http://soundbible.com/1233-Siren.html
+- http://soundbible.com/927-Grasshopper.html
+- http://soundbible.com/980-Wasp.html
