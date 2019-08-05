@@ -23,3 +23,5 @@ Sounds are from:
 - http://soundbible.com/1233-Siren.html
 - http://soundbible.com/927-Grasshopper.html
 - http://soundbible.com/980-Wasp.html
+- http://soundbible.com/1140-Elephant.html
+- http://soundbible.com/1049-Monster-Laugh.html
