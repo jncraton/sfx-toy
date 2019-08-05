@@ -1,7 +1,13 @@
 sfx-toy
 =======
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/eeb18179-7347-477e-a8a6-cbb7aadf104c/deploy-status)](https://app.netlify.com/sites/sfx-toy/deploys)
+
 A sound effects toy for children. This is a very basic terminal app that plays sounds based on individual key presses.
+
+It can be used online here:
+
+https://sfx-toy.netlify.com/
 
 Sounds are from:
 
