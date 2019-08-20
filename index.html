@@ -59,7 +59,9 @@ document.addEventListener('keyup',function(e) {
     document.querySelector('h1').innerHTML = name.toUpperCase()
   
     audio.src = 'sounds/' + sounds[e.key] + '.mp3'
-    audio.play()
+    audio.play().then(null, () => {
+      alert('Failed to play audio. You may need to enable autoplay for this site in your browser.')
+    })
   }
 })
 </script>
