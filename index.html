@@ -26,21 +26,21 @@
 
 <script>
 let sounds = {
-  'a': 'ambulance',
-  'b': 'bell',
-  'c': 'cow',
-  'd': 'dog',
-  'e': 'elephant',
-  'f': 'fire',
+  'a': 'ambulance 🚑',
+  'b': 'bell  	🔔',
+  'c': 'cow 🐄',
+  'd': 'dog 🐕',
+  'e': 'elephant 🐘',
+  'f': 'fire  	🔥',
   'g': 'grasshopper',
-  'h': 'horn',
-  'i': 'insect',
-  'j': 'jet',
-  'm': 'monster',
-  'p': 'police',
-  'r': 'rain',
-  't': 'train',
-  'w': 'whistle',
+  'h': 'horn 🕬',
+  'i': 'insect 🐛',
+  'j': 'jet 🛪',
+  'm': 'monster 👾',
+  'p': 'police 🚓',
+  'r': 'rain  	🌧',
+  't': 'train 🚆',
+  'w': 'whistle 🥳',
 }
 
 let colors = ['red','blue','green','purple','black','pink','orange','green']
@@ -58,7 +58,7 @@ document.addEventListener('keyup',function(e) {
   
     document.querySelector('h1').innerHTML = name.toUpperCase()
   
-    audio.src = 'sounds/' + sounds[e.key] + '.mp3'
+    audio.src = 'sounds/' + sounds[e.key].split(' ')[0] + '.mp3'
     audio.play().then(null, () => {
       alert('Failed to play audio. You may need to enable autoplay for this site in your browser.')
     })
