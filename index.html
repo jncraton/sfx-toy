@@ -20,49 +20,47 @@
 
 <body>
 
-<textarea></textarea>
+<button>ambulance 🚑</button>
+<button>bell  	🔔</button>
+<button>cow 🐄</button>
+<button>dog 🐕</button>
+<button>elephant 🐘</button>
+<button>fire  	🔥</button>
+<button>grasshopper</button>
+<button>horn 🕬</button>
+<button>insect 🐛</button>
+<button>jet 🛪</button>
+<button>monster 👾</button>
+<button>police 🚓</button>
+<button>rain  	🌧</button>
+<button>train 🚆</button>
+<button>whistle 🥳</button>
 
 <h1></h1>
 
 <script>
-let sounds = {
-  'a': 'ambulance 🚑',
-  'b': 'bell  	🔔',
-  'c': 'cow 🐄',
-  'd': 'dog 🐕',
-  'e': 'elephant 🐘',
-  'f': 'fire  	🔥',
-  'g': 'grasshopper',
-  'h': 'horn 🕬',
-  'i': 'insect 🐛',
-  'j': 'jet 🛪',
-  'm': 'monster 👾',
-  'p': 'police 🚓',
-  'r': 'rain  	🌧',
-  't': 'train 🚆',
-  'w': 'whistle 🥳',
-}
-
 let colors = ['red','blue','green','purple','black','pink','orange','green']
 
 let audio = new Audio()
 
-document.addEventListener('keyup',function(e) {
-  let name = sounds[e.key]
+document.querySelectorAll('button').forEach(button => {
+  button.addEventListener('click', () => {
+    let name = button.textContent
 
-  if (name) {
-    let color = colors[Math.floor(Math.random()*colors.length)]
+    if (name) {
+      let color = colors[Math.floor(Math.random()*colors.length)]
+      
+      
+      document.querySelector('h1').style.color = color
     
+      document.querySelector('h1').innerHTML = name.toUpperCase()
     
-    document.querySelector('h1').style.color = color
-  
-    document.querySelector('h1').innerHTML = name.toUpperCase()
-  
-    audio.src = 'sounds/' + sounds[e.key].split(' ')[0] + '.mp3'
-    audio.play().then(null, () => {
-      alert('Failed to play audio. You may need to enable autoplay for this site in your browser.')
-    })
-  }
+      audio.src = 'sounds/' + name.split(' ')[0] + '.mp3'
+      audio.play().then(null, () => {
+        alert('Failed to play audio. You may need to enable autoplay for this site in your browser.')
+      })
+    }
+  })
 })
 </script>
 
